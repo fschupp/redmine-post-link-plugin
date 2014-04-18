@@ -23,6 +23,6 @@ assigned
 **Example**
 
 Following URL will display a filled 'new issue' form in Redmine:
-{{{
+```
 http://127.0.0.1:3000/postlink/new?project_id=testapplication&subject=test&description=test%20description&email=piotrek%40gmail.com
-}}}
+```
