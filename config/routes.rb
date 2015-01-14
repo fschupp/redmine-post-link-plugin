@@ -1,8 +1,8 @@
 RedmineApp::Application.routes.draw do 
   
-  match "/dashboard", :to => 'postlink/:action', :controller => 'postlink', :action => 'postlink' 
- # root :to => "dashboard#index"
-  
+  match "/postlink", :to => 'postlink/:action', :controller => 'postlink', :action => 'postlink' 
+
 #  connect 'postlink/:action', :controller => 'postlink'
-  preview_issue '/issues/preview/new/:id', :controller => 'previews', :action => 'issue'
+#  preview_issue '/issues/preview/new/:id', :controller => 'previews', :action => 'issue'
+   match '/issues/preview/new/:id', :to => 'previews#issue', :as => 'preview_issue'
 end 
