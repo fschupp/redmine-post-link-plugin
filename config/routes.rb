@@ -1,6 +1,6 @@
 RedmineApp::Application.routes.draw do 
   
-  match "/dashboard", :to => ''postlink/:action', :controller => 'postlink'
+  match "/dashboard", :to => 'postlink/:action', :controller => 'postlink'
  # root :to => "dashboard#index"
   
 #  connect 'postlink/:action', :controller => 'postlink'
